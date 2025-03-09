@@ -1,0 +1,37 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Food Delivery backend",
+  "main": "index.js",
+  "scripts": {
+   "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "concurrently \"tsc --watch\" \"nodemon -x ts-node src/index.ts\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vaibhav27vds/Food-Delivery-Website.git"
+  },
+  "keywords": [
+    "backend",
+    "food-delivery"
+  ],
+  "author": "Vaibhav Deep Srivastava",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vaibhav27vds/Food-Delivery-Website/issues"
+  },
+  "homepage": "https://github.com/Vaibhav27vds/Food-Delivery-Website#readme",
+  "dependencies": {
+    "concurrently": "^9.1.2",
+    "dotenv": "^16.4.7",
+    "nodemon": "^3.1.9"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.10",
+    "express": "^4.21.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  }
+}
