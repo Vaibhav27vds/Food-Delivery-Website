@@ -4,7 +4,7 @@
   "description": "Food Delivery backend",
   "main": "index.js",
   "scripts": {
-   "build": "tsc",
+    "build": "tsc",
     "start": "node dist/index.js",
     "dev": "concurrently \"tsc --watch\" \"nodemon -x ts-node src/index.ts\""
   },
@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/Vaibhav27vds/Food-Delivery-Website#readme",
   "dependencies": {
+    "@prisma/client": "^6.4.1",
+    "@prisma/extension-accelerate": "^1.2.2",
     "concurrently": "^9.1.2",
     "dotenv": "^16.4.7",
     "nodemon": "^3.1.9"
@@ -31,6 +33,7 @@
     "@types/express": "^5.0.0",
     "@types/node": "^22.13.10",
     "express": "^4.21.2",
+    "prisma": "^6.4.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.2"
   }
